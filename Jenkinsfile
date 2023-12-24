@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/artisantek/java-example.git'
+                git branch: 'main', url: 'https://github.com/Nithishkumar0064/new-java-project.git'
             }
         }
 
