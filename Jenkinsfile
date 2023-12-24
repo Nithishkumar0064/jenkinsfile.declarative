@@ -22,7 +22,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'sudo cp target/works-with-heroku-1.0.war /opt/tomcat/apache-tomcat-9.0.68/webapps/'
+                sh 'sudo cp /home/ubuntu/new-folder/workspace/assignment-declarative/target/*.war  /opt/tomcat/apache-tomcat-9.0.68/webapps/'
             }
         }
 
