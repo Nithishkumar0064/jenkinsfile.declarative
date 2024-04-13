@@ -22,7 +22,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh echo 'the code is  deployed to docker '
+                sh 'sudo cp /home/ubuntu/new-folder/workspace/assignment2-remote/target/*.jar  /opt/tomcat/apache-tomcat-9.0.68/webapps/'
             }
         }
 
