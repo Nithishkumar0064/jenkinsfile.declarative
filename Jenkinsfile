@@ -22,7 +22,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'echo "your_password" | sudo -S cp /var/lib/jenkins/workspace/jenkinsfile1.declarative/target/*.war /opt/tomcat/apache-tomcat-9.0.68/webapps/'
+                sh 'sudo cp /var/lib/jenkins/workspace/jenkinsfile1.declarative/target/*.war /opt/tomcat/apache-tomcat-9.0.68/webapps/'
             }
         }
 
