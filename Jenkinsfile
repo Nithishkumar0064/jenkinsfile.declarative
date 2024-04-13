@@ -22,7 +22,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'sudo cp /home/ubuntu/new-folder/workspace/jenkinsfile.declarative/target/*.war  /opt/tomcat/apache-tomcat-9.0.68/webapps/'
+                sh 'sudo cp /home/ubuntu/jenkins/workspace/jenkinsfile.declarative/target/*.war  /opt/tomcat/apache-tomcat-9.0.68/webapps/'
             }
         }
 
